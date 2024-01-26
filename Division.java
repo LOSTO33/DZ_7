@@ -1,12 +1,9 @@
-public class Division implements Calculate{
+public class Division implements Calculate {
     @Override
-    public int add(int a, int b) {
-        try{
-            System.out.println("Решение :");
-            return a/b;
-        }catch (ArithmeticException e){
-            System.out.println("На ноль делить нельзя");
-        }
-        return a;
+    public int add(int a, int b){
+    if (b == 0){
+        throw new Error("На ноль делить нельзя");
+    }
+    return a/b;
     }
 }
