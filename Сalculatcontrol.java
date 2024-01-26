@@ -1,10 +1,11 @@
 public class Сalculatcontrol {
-    public СalculateInterface view;
+    СalculateInterface view = new СalculateInterface();
     Sum sum = new Sum();
     Division division = new Division();
     Multiplication multiplication = new Multiplication();
     Subtraction subtraction = new Subtraction();
     int a;
+    int result;
     int b;
 
     public Сalculatcontrol() {
@@ -22,21 +23,25 @@ public class Сalculatcontrol {
             view.SafeNumber();
             switch (choice) {
                 case 1:
-                    sum.add(a,b);
-                    break;
+                    result= sum.add(a,b);
+                    System.out.println(result);
+                break;
                 case 2:
-                    subtraction.add(a,b);
-
+                    result = subtraction.add(a,b);
+                    System.out.println(result);
                     break;
                 case 3:
-                    multiplication.add(a,b);
-
+                    result = multiplication.add(a,b);
+                    System.out.println(result);
                     break;
                 case 4:
-                    division.add(a,b);
+                    result = division.add(a,b);
+                    System.out.println(result);
+                    break;
             }
         } while (choice != 5);
     }
-    }
+
+}
 
 

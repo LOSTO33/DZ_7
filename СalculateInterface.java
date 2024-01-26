@@ -2,15 +2,16 @@ import java.util.Scanner;
 
 public class СalculateInterface {
     Scanner scanner ;
+
     public СalculateInterface() {
 
         scanner = new Scanner(System.in);
     }
     public void SafeNumber(){
         System.out.println("Введите первое число");
-        String a = scanner.nextLine();
+        int a = scanner.nextInt();
         System.out.println("Введите второе число");
-        String b= scanner.nextLine();
+        int b= scanner.nextInt();
 
     }
 
