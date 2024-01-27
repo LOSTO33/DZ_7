@@ -20,7 +20,8 @@ public class Сalculatcontrol {
         do {
             view.showMenu();
             choice = view.getUserChoice();
-            view.SafeNumber();
+            a = view.SafeNumber("Введите первое число.");
+            b = view.SafeNumber("Введите первое число.");
             switch (choice) {
                 case 1:
                     result= sum.add(a,b);

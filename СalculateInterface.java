@@ -7,11 +7,10 @@ public class СalculateInterface {
 
         scanner = new Scanner(System.in);
     }
-    public void SafeNumber(){
-        System.out.println("Введите первое число");
-        int a = scanner.nextInt();
-        System.out.println("Введите второе число");
-        int b= scanner.nextInt();
+
+        public int SafeNumber(String message){
+            System.out.println(message);
+            return scanner.nextInt();
 
     }
 

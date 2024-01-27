@@ -4,6 +4,7 @@ public class Division implements Calculate {
     if (b == 0){
         throw new Error("На ноль делить нельзя");
     }
+        System.out.println("Решение :");
     return a/b;
     }
 }
